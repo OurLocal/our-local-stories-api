@@ -1,8 +1,15 @@
 # Our Local API
 
-**Note: this is a Govhack project built in a weekend, don't rely on it yet! PRs welcome.**
+<img src="http://www.abc.net.au/reslib/201408/r1314027_18113770.JPG" width=300></img><br>
+[One man's obsession with Lego, ABC Northwest Queensland (2014)](http://www.abc.net.au/local/photos/2014/08/08/4063716.htm)
 
-A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
+An self-hosted open-source API for querying the [ABC Local Online Photo Stories 2009-2014 data set](http://data.gov.au/dataset/abc-local-online-photo-stories-2009-2014)
+
+**Note: this is a Govhack project built in a weekend, don't rely on it yet!**
+
+***
+
+## Features
 
   * Full-text search.
   * Location-based searches.
@@ -61,4 +68,3 @@ See [docs](https://github.com/OurLocal/our-local-stories-api/docs/import-data.md
    'longitude': 160.4445
 }]
 ```
-
