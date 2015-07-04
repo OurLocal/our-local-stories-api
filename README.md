@@ -35,6 +35,10 @@ A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
 > python manage.py runserver
 ```
 
+## Importing Data
+
+See [docs](https://github.com/OurLocal/our-local-stories-api/docs/import-data.md).
+
 ## Usage
 
 ```
@@ -57,3 +61,4 @@ A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
    'longitude': 160.4445
 }]
 ```
+
