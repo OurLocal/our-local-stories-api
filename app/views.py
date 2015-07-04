@@ -1,5 +1,6 @@
 import json
 import datetime
+import pprint
 
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
@@ -8,7 +9,6 @@ from datetime import datetime as dt
 from django.core.exceptions import SuspiciousOperation
 from django.contrib.gis.geos import Point, Polygon
 
-import pprint
 
 
 RESULTS_HARD_LIMIT = 100
@@ -110,8 +110,8 @@ def api(request):
         , 'longitude': s.location.coords[1] 
     } for s in story_list]
 
-    if request.GET.get('pretty')
-        output = pprint.pprint(json.dumps(story_dicts))
+    if request.GET.get('pretty'):
+        output = json.dumps(story_dicts, sort_keys=True, indent=2)
     else:
         output = json.dumps(story_dicts)
 

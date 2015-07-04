@@ -49,22 +49,27 @@ See [docs](https://github.com/OurLocal/our-local-stories-api/docs/import-data.md
 ## Usage
 
 ```
-> curl http://127.0.0.1:8080?search=Crocodiles
-[{
-  'title': 'Mittagong Greeny Flat shows eco-living made easy',
-  'url': 'http://www.abc.net.au/local/photos/2014/05/26/4012255.htm',
-  'date': '26/05/2014',
-  'primary_image': 'http://www.abc.net.au/reslib/201405/r1280295_17329764.jpg',
-  'subjects': ['blah', 'something', 'another'],
-  'latitude': -34.4516,
-  'longitude': 150.4445
-  },{
-   'title': 'Yadda',
-   'url': 'http://www.abc.net.au/local/photos/2014/05/26/4012255.htm',
-   'date': '26/05/2014',
-   'primary_image': 'http://www.abc.net.au/reslib/201405/r1280295_17329764.jpg',
-   'subjects': ['blah', 'something', 'another'],
-   'latitude': -54.4516,
-   'longitude': 160.4445
-}]
+> curl http://127.0.0.1:8000/?search=lego&pretty=1
+[
+  {
+    "date": "08/08/2014", 
+    "latitude": -20.7287, 
+    "longitude": 139.4897, 
+    "primary_image": "http://www.abc.net.au/reslib/201408/r1314027_18113770.JPG", 
+    "primary_image_caption": "Several recognisable cartoon characters which Mr Kemp has created from square blocks of Lego. He says while sometimes he follows instructions, he often does his own thing. You do follow some instructions to a point and some you just grab and go 'I dont like that bit so Ill swap that bit with this bit' and before you know it youve got something completely different.", 
+    "subjects": "Education:Play and Learning, Human Interest:People,", 
+    "title": "One mans obsession with Lego", 
+    "url": "http://www.abc.net.au/local/photos/2014/08/08/4063716.htm"
+  }, 
+  {
+    "date": "21/05/2014", 
+    "latitude": -30.7458, 
+    "longitude": 121.4715, 
+    "primary_image": "http://www.abc.net.au/reslib/201405/r1278944_17301720.jpg", 
+    "primary_image_caption": "The Lego Travellers at Hellfire Bay in Cape Le Grand National Park, Esperance", 
+    "subjects": "Lifestyle and Leisure:Travel and Tourism,", 
+    "title": "The tiny travellers helping put Goldfields-Esperance on the map", 
+    "url": "http://www.abc.net.au/local/photos/2014/05/21/4009029.htm"
+  }
+]
 ```
