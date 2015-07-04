@@ -16,6 +16,7 @@ A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
 > apt-get update
 > apt-get install -y postgresql postgresql-contrib
 > apt-get install -y postgis postgresql-9.3-postgis-2.1
+> apt-get install -y python-virtualenv
 > createdb local_explorer
 > sudo -u postgres psql -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_topology;" local_explorer
 ```
@@ -25,8 +26,9 @@ A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
 ```
 > git clone https://github.com/OurLocal/our-local-stories-api
 > cd our-local-stories-api
-> # Optional
-> virtualenv our-local-stories-api
+> # Optional 2 lines below.
+> virtualenv ENV
+> . ENV/bin/activate
 > pip install -r requirements.txt
 > python manage.py migration
 > python manage.py collectstatic
