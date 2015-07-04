@@ -1,4 +1,4 @@
-# Our Local API
+# Our Local Stories API
 
 <img src="http://www.abc.net.au/reslib/201408/r1314027_18113770.JPG" width=300></img><br>
 [One man's obsession with Lego, ABC Northwest Queensland (2014)](http://www.abc.net.au/local/photos/2014/08/08/4063716.htm)
