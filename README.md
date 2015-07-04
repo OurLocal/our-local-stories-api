@@ -39,4 +39,21 @@ A simple API for querying the ABC Local Online Photo Stories 2009-2014 data set:
 
 ```
 > curl http://127.0.0.1:8080?search=Crocodiles
+[{
+  'title': 'Mittagong Greeny Flat shows eco-living made easy',
+  'url': 'http://www.abc.net.au/local/photos/2014/05/26/4012255.htm',
+  'date': '26/05/2014',
+  'primary_image': 'http://www.abc.net.au/reslib/201405/r1280295_17329764.jpg',
+  'subjects': ['blah', 'something', 'another'],
+  'latitude': -34.4516,
+  'longitude': 150.4445
+  },{
+   'title': 'Yadda',
+   'url': 'http://www.abc.net.au/local/photos/2014/05/26/4012255.htm',
+   'date': '26/05/2014',
+   'primary_image': 'http://www.abc.net.au/reslib/201405/r1280295_17329764.jpg',
+   'subjects': ['blah', 'something', 'another'],
+   'latitude': -54.4516,
+   'longitude': 160.4445
+}]
 ```
