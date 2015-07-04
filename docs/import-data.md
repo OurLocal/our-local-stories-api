@@ -1,6 +1,6 @@
 ﻿## Data Import 
 
-Author: Lyndon D'arcy (logworthy)
+Author: Lyndon D'arcy ([logworthy](https://github.com/logworthy)) (imported from https://github.com/logworthy/govhack2015)
 
 ```
 /* shell commands to run to clean the data (remove invalid unicode chars) */
