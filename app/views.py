@@ -23,6 +23,9 @@ def api(request):
     &start=2009-01-01-2014-12-30&end=2014-12-30
     &point=??
     &box=??
+    
+    Code mostly written by Lyndon D'arcy
+    (imported from https://github.com/logworthy/govhack2015).
     """
 
     search = request.GET.get('search', None)
