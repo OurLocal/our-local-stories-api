@@ -8,6 +8,7 @@ from app.models import Story
 from datetime import datetime as dt
 from django.core.exceptions import SuspiciousOperation
 from django.contrib.gis.geos import Point, Polygon
+from django.contrib.gis.measure import D
 
 
 
@@ -21,8 +22,8 @@ def api(request):
 
     ?search=Something+yadda
     &start=2009-01-01-2014-12-30&end=2014-12-30
-    &point=??
-    &box=??
+    &point=-33.4246,151.3441,
+    &distance=100
     
     Code mostly written by Lyndon D'arcy
     (imported from https://github.com/logworthy/govhack2015).
@@ -44,8 +45,11 @@ def api(request):
     point = request.GET.get('point', None)
     box = request.GET.get('box', None)
 
+    distance = request.GET.get('distance')
+
     # check types for key numeric querystring parameters
     try:
+        distance = int(distance) if distance else None
         start_date = dt.strptime(start, '%Y-%m-%d')
         end_date = dt.strptime(end, '%Y-%m-%d')
         date_date = dt.strptime(date, '%Y-%m-%d')
@@ -93,7 +97,11 @@ def api(request):
     # geo limits
     geo_query = date_query
     if box_poly != None:
-        geo_query = date_query.filter(location__contained=box_poly)
+        geo_query = geo_query.filter(location__contained=box_poly)
+
+    if distance and point_point:
+        geo_query = geo_query.filter(
+            location__distance_lte=(point_point, D(m=distance * 1000)))
 
     # sort and limit
     # closest in time to date_date
