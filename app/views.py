@@ -100,6 +100,7 @@ def api(request):
 
     # convert to dict
     story_dicts = [{
+        'id': s.id,
         'title': s.title
         , 'url': s.url
         , 'date': s.date.strftime('%d/%m/%Y')
