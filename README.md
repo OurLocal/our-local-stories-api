@@ -73,3 +73,14 @@ See [docs](docs/import-data.md).
   }
 ]
 ```
+
+## API Parameters (all optional)
+* **search** - `text` - string to search for
+* **limit** - `an integer` - the maximum number of results to return (default 10, max 100)
+* **date** - `a date in %Y-%m-%d format` - (currently has no effect unless **window** is also specified)
+* **window** - `an integer` - limit results to stories published within this many days of **date**
+* **start** - `a date in %Y-%m-%d format` - limit results to stories published after this date
+* **end** - `a date in %Y-%m-%d format` - limit results to stories published before this date
+* **box** - `lat1,lon1:lat2,lon2 (e.g. -37.123,125:-40,127.23)` - limit results to stories that fall within the rectangle defined by these two points
+* **point** - `lat1,lon1` - (currently has no effect unless **distance** is also specified)
+* **distance** - `an integer` - limit results to stories published within this many kilometres from **point**
