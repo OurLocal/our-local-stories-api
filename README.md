@@ -44,7 +44,7 @@ An self-hosted open-source API for querying the [ABC Local Online Photo Stories 
 
 ## Importing Data
 
-See [docs](https://github.com/OurLocal/our-local-stories-api/docs/import-data.md).
+See [docs](docs/import-data.md).
 
 ## Usage
 
