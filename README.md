@@ -85,3 +85,9 @@ See [docs](docs/import-data.md).
 * **point** - `lat1,lon1` - (currently has no effect unless **distance** is also specified)
 * **distance** - `an integer` - limit results to stories published within this many kilometres from **point**
 * **pretty** - `1 or 0` - display results in a pretty format, i.e. with indentation and sorted keys
+
+## License
+
+[MIT](License)
+
+*Note: all content returned by API is property of ABC Broadcasting Corporation. See [here](https://data.gov.au/dataset/abc-local-online-photo-stories-2009-2014) for conditions of use.*
