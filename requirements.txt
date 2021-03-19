@@ -4,7 +4,7 @@ gnureadline==6.3.3
 ipdb==0.8.1
 ipython==3.2.0
 itsdangerous==0.24
-Jinja2==2.7.3
+Jinja2==2.11.3
 MarkupSafe==0.23
 psycopg2==2.6.1
 pyes==0.99.5
